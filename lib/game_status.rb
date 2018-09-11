@@ -62,7 +62,7 @@ end
 
 
 def winner(board)
-  winning_three = winner?(board)
+  winning_three = won?(board)
   winning_three[1]
 end
 
