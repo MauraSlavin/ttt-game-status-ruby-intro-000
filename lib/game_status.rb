@@ -19,8 +19,8 @@ def won?(board)
   end
   winner
 end
-        
-    
+
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0, 1, 2],
@@ -32,4 +32,3 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 ]
-
