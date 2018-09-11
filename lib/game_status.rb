@@ -11,14 +11,14 @@ def won?(board)
     puts "win: #{win}"
     winner_case = win.all? do |cell|
       puts "(X?) Cell: #{cell}"
-      cell == "X"
-      puts "cell is X? #{cell == "X"}"
+      board[cell] == "X"
+      puts "cell is X? #{board[cell] == "X"}"
     end  # winner_case .all?
     winner = winner | winner_case
     puts "X: winner_case: #{winner_case}; winner: #{winner}"
     winner_case = win.all? do |cell|
-      puts "(O?) Cell: #{cell}"
-      cell == "O"
+      puts "(O?) Cell: #{board[cell]}"
+      board[cell] == "O"
     end
     puts "O: winner_case: #{winner_case}; winner: #{winner}"
     winner = winner | winner_case
