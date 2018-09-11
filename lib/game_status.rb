@@ -13,7 +13,7 @@ def won?(board)
   puts " #{board[3]} | #{board[4]} | #{board[5]}"
   puts "---|---|---"
   puts " #{board[6]} | #{board[7]} | #{board[8]}"
-  
+
   winner = false
   WIN_COMBINATIONS.each do |win|
     puts "win: #{win}"
