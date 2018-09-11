@@ -50,8 +50,10 @@ def full?(board)
 end
 
 def draw?(board)
-
-  draw_tf = if (!won?(board) & full?(board)) ? true : false
+  puts "won: #{won?(board)}"
+  puts "full: #{full?(board)}"
+  puts "not won & full: #{!won?(board) && full?(board)}"
+  draw_tf = if (!won?(board) && full?(board)) ? true : false
   end
 end
 
