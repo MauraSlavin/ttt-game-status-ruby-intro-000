@@ -6,7 +6,7 @@ end
 
 
 def won?(board)
-  winner = []
+  winner = false
   WIN_COMBINATIONS.each do |win|
     puts "win: #{win}"
     winner_case = win.all? do |cell|
