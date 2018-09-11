@@ -61,6 +61,11 @@ def over?(board)
 end
 
 
+def winner(board)
+  winning_three = winner?(board)
+  winning_three[1]
+end
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0, 1, 2],
