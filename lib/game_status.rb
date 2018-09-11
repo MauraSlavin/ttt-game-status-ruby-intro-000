@@ -15,7 +15,7 @@ def won?(board)
       board[cell] == "X"
     end  # winner_case .all?
     if winner_case winner = win end # of if
-    puts "X: winner_case: #{winner_case}; winner: #{winner}"
+    puts "X: winner_case: #{winner_case}; winner: #{winner}; win: #{win}"
   end # of WIN_COMBINATIONS each
   winner
 end # of def winner?
