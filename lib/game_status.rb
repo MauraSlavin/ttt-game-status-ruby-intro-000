@@ -40,7 +40,8 @@ def won?(board)
 end # of def winner?
 
 def full?(board)
-  full_board = board.all? do |cell|
+  i = [0..8]
+  full_board = i.all? do |cell|
     position_taken?(board, cell)
   end
   full_board
