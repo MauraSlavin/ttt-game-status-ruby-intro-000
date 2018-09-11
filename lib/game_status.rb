@@ -40,10 +40,10 @@ def won?(board)
 end # of def winner?
 
 def full?(board)
-  i = [0..8]
+  i = [0, 1, 2, 3, 4, 5, 6, 7, 8]
   full_board = i.all? do |cell|
     puts "cell: #{cell}"
-    puts "Taken: #{position_taken?(board, cell)}"
+    # puts "Taken: #{position_taken?(board, cell)}"
     position_taken?{board, cell}
   end
   full_board
