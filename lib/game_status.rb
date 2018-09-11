@@ -6,7 +6,7 @@ end
 
 
 def won?(board)
-  winner = false
+  winner = []
   WIN_COMBINATIONS.each do |win|
     puts "win: #{win}"
     winner_case = win.all? do |cell|
@@ -14,7 +14,7 @@ def won?(board)
       puts "cell is X? #{board[cell] == "X"}"
       board[cell] == "X"
     end  # winner_case .all?
-    winner = winner | winner_case
+    if winner_case winner = win end # of if
     puts "X: winner_case: #{winner_case}; winner: #{winner}"
   end # of WIN_COMBINATIONS each
   winner
