@@ -22,9 +22,14 @@ def won?(board)
       puts "cell is X? #{board[cell] == "X"}"
       board[cell] == "X"
     end  # winner_case .all?
+    winner_case = win.all? do |cell|
+      puts "(O?) Cell: #{cell}"
+      puts "cell is X? #{board[cell] == "O"}"
+      board[cell] == "O"
+    end  # winner_case .all?
     if winner_case
       winner = win
-      puts "X: winner_case: #{winner_case}; winner: #{winner}; win: #{win}"
+      puts "winner_case: #{winner_case}; winner: #{winner}; win: #{win}"
     end # of if
   end # of WIN_COMBINATIONS each
   winner
