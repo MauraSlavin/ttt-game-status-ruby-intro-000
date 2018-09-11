@@ -39,7 +39,13 @@ def won?(board)
   winner
 end # of def winner?
 
+def full?(board)
+board.all? do |cell|
+  position_taken(cell)
+end
 
+end
+  
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0, 1, 2],
