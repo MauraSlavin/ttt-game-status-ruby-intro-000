@@ -16,24 +16,24 @@ def won?(board)
 
   winner = false
   WIN_COMBINATIONS.each do |win|
-    puts "win: #{win}"
+    # puts "win: #{win}"
     winner_case = win.all? do |cell|
-      puts "(X?) Cell: #{cell}"
-      puts "cell is X? #{board[cell] == "X"}"
+      # puts "(X?) Cell: #{cell}"
+      # puts "cell is X? #{board[cell] == "X"}"
       board[cell] == "X"
     end  # winner_case .all?
     if winner_case
       winner = win
-      puts "winner_case: #{winner_case}; winner: #{winner}; win: #{win}"
+      # puts "winner_case: #{winner_case}; winner: #{winner}; win: #{win}"
     end # of if
     winner_case = win.all? do |cell|
-      puts "(O?) Cell: #{cell}"
-      puts "cell is X? #{board[cell] == "O"}"
+      # puts "(O?) Cell: #{cell}"
+      # puts "cell is X? #{board[cell] == "O"}"
       board[cell] == "O"
     end  # winner_case .all?
     if winner_case
       winner = win
-      puts "winner_case: #{winner_case}; winner: #{winner}; win: #{win}"
+      # puts "winner_case: #{winner_case}; winner: #{winner}; win: #{win}"
     end # of if
   end # of WIN_COMBINATIONS each
   winner
