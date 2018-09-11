@@ -56,6 +56,10 @@ def draw?(board)
   draw_tf = (!won?(board) && full?(board)) ? true : false
 end
 
+def over?(board)
+  over_tf = (won?(board) || draw?(board) || full?(board)) ? true : false
+end
+
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
