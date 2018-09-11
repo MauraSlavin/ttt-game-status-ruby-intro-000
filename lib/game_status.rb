@@ -40,10 +40,10 @@ def won?(board)
 end # of def winner?
 
 def full?(board)
-board.all? do |cell|
-  position_taken?(board, cell)
-end
-
+  full_board = board.all? do |cell|
+    position_taken?(board, cell)
+  end
+  full_board
 end
 
 # Define your WIN_COMBINATIONS constant
