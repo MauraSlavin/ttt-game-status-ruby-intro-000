@@ -63,7 +63,7 @@ end
 
 def winner(board)
   winning_three = won?(board)
-  winning_three[1]
+  board[winning_three[1]]
 end
 
 # Define your WIN_COMBINATIONS constant
