@@ -9,10 +9,12 @@ def won?(board)
   winner = false
   WIN_COMBINATIONS.each do |win|
     winner_case = win.all? do |cell|
+      puts "Cell: #{cell} (X)"
       cell == "X"
     end  # winner_case .all?
     winner = winner | winner_case
     winner_case = win.all? do |cell|
+      puts "Cell: #{cell} (O)"
       cell == "O"
     end
     winner = winner | winner_case
