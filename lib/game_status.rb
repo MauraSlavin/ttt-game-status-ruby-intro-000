@@ -15,7 +15,7 @@ def won?(board)
     winner = winner | winner_case
     puts "X: winner_case: #{winner_case}; winner: #{winner}"
     winner_case = win.all? do |cell|
-      puts "Cell: #{cell} (O)"
+      puts "(O?) Cell: #{cell}"
       cell == "O"
     end
     puts "O: winner_case: #{winner_case}; winner: #{winner}"
