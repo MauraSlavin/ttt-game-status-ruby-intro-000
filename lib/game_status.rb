@@ -42,12 +42,19 @@ end # of def winner?
 def full?(board)
   i = [0, 1, 2, 3, 4, 5, 6, 7, 8]
   full_board = i.all? do |cell|
-    puts "cell: #{cell}"
-    puts "Taken: #{position_taken?(board, cell)}"
+    # puts "cell: #{cell}"
+    # puts "Taken: #{position_taken?(board, cell)}"
     position_taken?(board, cell)
   end
   full_board
 end
+
+def draw?(board)
+
+  draw_tf = if (!won?(board) & full?(board)) ? true : false
+  end
+end
+
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
