@@ -41,7 +41,7 @@ end # of def winner?
 
 def full?(board)
 board.all? do |cell|
-  position_taken?(cell)
+  position_taken?(board, cell)
 end
 
 end
